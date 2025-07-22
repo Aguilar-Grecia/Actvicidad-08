@@ -1,13 +1,3 @@
-def menu():
-    print("---MENÚ PRINCIPAL DEL SISTEMA---")
-    print("1. Calcular el factorial de un número.")
-    print("2. Suma de los primeros N números naturales.")
-    print("3. Calcular el n-ésimo número de Fibonacci.")
-    print("4. Contar cuántas veces aparece una letra en una palabra.")
-    print("5. Invertir una cadena de texto.")
-    print("6. Calcular la potencia de un número")
-    print("7. Salir del programa.")
-
 def factorial(n):
     if n == 0 or n == 1:
         return 1
@@ -45,6 +35,16 @@ def potencia(base, exponente):
         return 1
     else:
         return base * potencia(base, exponente - 1)
+
+def menu():
+    print("---MENÚ PRINCIPAL DEL SISTEMA---")
+    print("1. Calcular el factorial de un número.")
+    print("2. Suma de los primeros N números naturales.")
+    print("3. Calcular el n-ésimo número de Fibonacci.")
+    print("4. Contar cuántas veces aparece una letra en una palabra.")
+    print("5. Invertir una cadena de texto.")
+    print("6. Calcular la potencia de un número")
+    print("7. Salir del programa.")
 
 while True:
     menu()
