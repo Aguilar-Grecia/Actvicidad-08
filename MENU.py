@@ -24,7 +24,7 @@ def fibonacci(n):
     if n <= 1:
         return n
     else:
-        return fibonacci(n - 1)
+        return fibonacci(n - 1) + fibonacci(n - 2)
 
 def contar_letra(palabra, letra, indice):
     if indice < 0:
@@ -36,7 +36,7 @@ def contar_letra(palabra, letra, indice):
 
 def cadena_texto(cadena, texto):
     if texto < 0:
-        return 0
+        return ""
     else:
         return cadena[texto] + cadena_texto(cadena, texto - 1)
 
